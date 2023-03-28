@@ -1,0 +1,194 @@
+header {
+  position: sticky;
+  padding: 30px;
+  text-align: center;
+  top: 0;
+  height: auto;
+  margin-top: 30px;
+
+}
+
+p {
+  font-family: "aileron", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: rgba(47, 50, 42, 0.963);
+  font-size: 15px;
+  text-align: justify;
+  margin-top: 2px;
+}
+
+h3 {
+  font-family: "aileron", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: rgba(47, 50, 42, 0.963);
+  font-size: 20px;
+  text-align: left;
+  margin-top: 9px;
+
+}
+
+.postpics {
+  width: 200px;
+  height: 200px;
+}
+
+.average {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.userpics {
+  float: left;
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+
+}
+
+.container_post {
+  height: auto;
+  border-radius: 25px;
+  background-color: #dbdbdba9;
+  padding: 30px;
+  width: 340px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+
+div.thumbnails {
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home_button {
+  display: inline;
+  float: left;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  left: 60px;
+}
+
+.thumbnail-icon {
+  display: inline;
+  float: left;
+  width: 45px;
+  height: 45px;
+  left: 660px;
+}
+
+h1 {
+  font-family: "aileron", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #008037;
+  font-size: 50px;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.slider_container {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  position: fixed;
+  bottom: calc(50% - 10px);
+  z-index: 3;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 90px;
+  transition: opacity 0.5s ease;
+}
+
+#left-arrow {
+  left: calc(43% - 120px);
+}
+
+#right-arrow {
+  right: calc(43% - 120px);
+}
+
+.slider {
+  width: 100%;
+  height: auto;
+  /* We need a padding left 
+  so that the elements will be centered at all times*/
+  padding-left: 40%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x proximity;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.box {
+  /* scroll-snap-align is very important
+  , it will help us figure out where is the center of every box*/
+  scroll-snap-align: center;
+  width: 400px;
+  /* Important!! min-width tells my slider it can not
+   resize my elements to fit, it has to do scroll*/
+  min-width: 400px;
+  margin: 70px;
+  border-radius: 25px;
+  height: auto;
+
+}
+
+#center {
+  opacity: 1;
+}
+
+.dummy {
+  scroll-snap-align: none;
+  visibility: hidden;
+  min-width: 70%;
+
+}
+
+.sliderimg {
+  /* scroll-snap-align is very important
+  , it will help us figure out where is the center of every box*/
+  scroll-snap-align: center;
+  /* Important!! min-width tells my slider it can not
+   resize my elements to fit, it has to do scroll*/
+  position: relative;
+  z-index: 1;
+  border-radius: 80%;
+}
