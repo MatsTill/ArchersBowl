@@ -23,20 +23,38 @@
 </head>
 
 <body>
-  <img src="graphics/logo.png" alt="logo">
+  
   <div class="container">
-    <form action="homepage.html" method="POST" class="form">
-      <p>Email Address</p>
-      <input type="email" name="" class="input">
+    <form class="form" action="homepage.html">
+      <p>EMAIL<br>
+      <input type="email" class="input" required ></p>
 
-      <p>Create Password</p>
-      <input type="password" name="password" class="input">
+      <label>GIVEN NAME<br>
+      <input type="text" class="input" required></label>
 
-      <p>Re-type Password</p>
-      <input type="password" name="password" class="input">
+      <label>LAST NAME<br>
+      <input type="text" class="input" required></label>
+      
+      <p>PASSWORD<br>
+      <input type="password" class="input" required></p>
+
+      <p>RETYPE PASSWORD<br>
+      <input type="password" class="input" required></p>
+
+      <br>
+      <p>PROFILE - OTHERS WILL BE ABLE TO VIEW THIS</p>
+
+      <p>USERNAME<br>
+      <input type="text" class="input" required></p>
+
+      <p>ROLE<br>
+      <input type="button" value="Student" class="role"> 
+      <input type="button" value="Staff" class="role">
+      </p>
 
       <input type="submit" value="Sign Up" id="submit">
     </form>
+
   </div>
 </body>
 
