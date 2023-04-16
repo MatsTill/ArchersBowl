@@ -18,12 +18,11 @@ This repository contains the files for a food forum web application called Arche
 5. To run the application, execute `node index.js` or `npm start`.
 6. Go to the browser and enter `localhost:3000` in the URL to access the web application.
 
-## NPM Packages and Third-Party Libraries
-### NPM
-- 
+-
 
-### Third-Party
-- 
+### The application is currently deployed and can be found through this link: https://mco-phase-3-archersbowl.web.app/ or https://archers-bowl.herokuapp.com/
+
+-
 
 The following npm commands were used when developing the program
 - npm init -y
