@@ -40,9 +40,5 @@ The following npm commands were used when developing the program
 - npm i passport-local-mongoose (NOT INSTALLED)
 - npm i hbs (NOT INSTALLED)
 
-*MongoDB must be connected and running to access the database.
 *to use nodemon scripts run: PowerShell -ExecutionPolicy Bypass when starting a new terminal
-
-Run "npm start" and open localhost:3000 on the browser to use the program.
-
-*Clicking the user icon when already inside the user page will log you out and return the browser to the login page.
+*clicking the user icon when already inside the user page will log you out and return the browser to the login page.
