@@ -1,3 +1,4 @@
+![Logo](public/images/logo.png)
 
 # CCAPDEV Machine Project - Web Application
 This repository contains the files for a food forum web application called Archer's Bowl. The Lasallian community can create an account and log in to see all the nearby food spots in and around De La Salle, University. Users will be able to add new food spots, see reviews and add their own too! 
