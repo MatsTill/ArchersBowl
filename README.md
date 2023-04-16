@@ -1,13 +1,5 @@
 # CCAPDEV Machine Project - Web Application
-This repository contains the files for a food forum web application called Archer's Bowl. The Lasallian community can create an account and log in to see all the nearby food spots in and around De La Salle, University. Users will be able to add new food spots, add their review and be able to see others reviews too, manage their account.
-
-## Contents
-- [Controller](https://github.com/): contains all callback functions for server responses to client requests
-- [Models](https://github.com/): contains all database models and database access functions
-- [Public](https://github.com/): contains static assets such as CSS, JS, image, and font files
-- [Routes](https://github.com/): contains the server responses for HTTP method requests to a specific path in the server
-- [Views](https://github.com/): contains all handlebars files rendered by the server
-- [index.js](https://github.com/): the main file used to execute the web application
+This repository contains the files for a food forum web application called Archer's Bowl. The Lasallian community can create an account and log in to see all the nearby food spots in and around De La Salle, University. Users will be able to add new food spots, see reviews and add their own too! 
 
 ## Follow the steps below to set-up the repository locally:
 1. Clone the repository or download the zipped folder.
