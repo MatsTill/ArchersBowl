@@ -8,7 +8,6 @@ This repository contains the files for a food forum web application called Arche
 - [Routes](https://github.com/): contains the server responses for HTTP method requests to a specific path in the server
 - [Views](https://github.com/): contains all handlebars files rendered by the server
 - [index.js](https://github.com/): the main file used to execute the web application
-- [test.js](https://github.com/): the file used to initialize sample data in the database
 
 ## Follow the steps below to set-up the repository locally:
 1. Clone the repository or download the zipped folder.
@@ -16,9 +15,8 @@ This repository contains the files for a food forum web application called Arche
 3. Navigate to the project folder.
 4. Install the necessary NPM libraries by running `npm install`.
 4. Make sure MongoDB is installed and running.
-5. Run `node test.js` to initialize the contents of the database. This must only be done once to avoid duplication of data.
-6. To run the application, execute `node index.js`.
-7. Go to the browser and enter `localhost:3000` in the URL to access the web application.
+5. To run the application, execute `node index.js` or `npm start`.
+6. Go to the browser and enter `localhost:3000` in the URL to access the web application.
 
 ## NPM Packages and Third-Party Libraries
 ### NPM
