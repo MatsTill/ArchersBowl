@@ -1,6 +1,6 @@
 ![Logo](public/images/logo.png)
 
-# CCAPDEV Machine Project - Web Application
+# Machine Project - Web Application
 Indecisiveness in choosing where to eat next is a common frustration. There is an overwhelming amount of options for food spots in and around De La Salle University, yet information on these is limited or difficult to obtain on the go. This web application aims to answer a Lasallian’s question, “Where should we eat now?” Students unfamiliar with the campus can utilize the web application to add, view, and share each restaurant’s wait time, location, price, etc. This will ease a common frustration, discover new places, have a more efficient break time, and help underrated businesses.
 
 This repository contains the files for this food forum web app called *Archer's Bowl*. The Lasallian community can create an account and log in to see all the nearby food spots in and around De La Salle, University. 
