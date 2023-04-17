@@ -1,9 +1,9 @@
 ![Logo](public/images/logo.png)
 
 # CCAPDEV Machine Project - Web Application
-Indecisiveness in choosing where to eat next is a common frustration. There is an overwhelming amount of options for food spots in and around De La Salle University, yet information on these is limited or difficult to obtain on the go. This web application aims to answer a Lasallian’s question, “Where should we eat now?” Students unfamiliar with the campus can utilize the web application to add, view, and share each restaurant’s wait time, location, price, etc. This will ease this common frustration, discover new places, have a more efficient break time, and help underrated businesses.
+Indecisiveness in choosing where to eat next is a common frustration. There is an overwhelming amount of options for food spots in and around De La Salle University, yet information on these is limited or difficult to obtain on the go. This web application aims to answer a Lasallian’s question, “Where should we eat now?” Students unfamiliar with the campus can utilize the web application to add, view, and share each restaurant’s wait time, location, price, etc. This will ease a common frustration, discover new places, have a more efficient break time, and help underrated businesses.
 
-This repository contains the files for this food forum web app called *Archer's Bowl*. The Lasallian community can create an account and log in to see all the nearby food spots in and around De La Salle, University. Users will be able to add new food spots, share reviews and add their own too! 
+This repository contains the files for this food forum web app called *Archer's Bowl*. The Lasallian community can create an account and log in to see all the nearby food spots in and around De La Salle, University. 
 
 ![HOMEPAGE](public/images/HOME.png)
 ![CHOICES](public/images/RESTO.png)
@@ -40,3 +40,7 @@ The following npm commands were used when developing the program
 
 *to use nodemon scripts run: PowerShell -ExecutionPolicy Bypass when starting a new terminal
 *clicking the user icon when already inside the user page will log you out and return the browser to the login page.
+
+## Contributors
+
+
