@@ -7,7 +7,6 @@ This repository contains the files for this food forum web app called *Archer's 
 ##
 ![HOMEPAGE](public/images/HOME.png)
 ![CHOICES](public/images/RESTO.png)
-##
 
 ## Follow the steps below to set-up the repository locally:
 1. Clone the repository or download the zipped folder.
@@ -19,8 +18,7 @@ This repository contains the files for this food forum web app called *Archer's 
 6. Go to the browser and enter `localhost:3000` in the URL to access the web application.
 
 
-**The application is currently deployed and can be found through this link: https://mco-phase-3-archersbowl.web.app/ or https://archers-bowl.herokuapp.com/
-**
+** The application is currently deployed and can be found through this link: https://mco-phase-3-archersbowl.web.app/ or https://archers-bowl.herokuapp.com/ **
 
 
 The following npm commands were used when developing the program
@@ -40,8 +38,8 @@ npm i passport-local-mongoose (NOT INSTALLED)
 npm i hbs (NOT INSTALLED)
 ```
 
-<sub> to use nodemon scripts run: PowerShell -ExecutionPolicy Bypass when starting a new terminal 
-clicking the user icon when already inside the user page will log you out and return the browser to the login page. 
+<sub> to use nodemon scripts run: PowerShell -ExecutionPolicy Bypass when starting a new terminal  <br>
+clicking the user icon when already inside the user page will log you out and return the browser to the login page.  <br>
 project not yet finished </sub>
 
 ## Contributors
