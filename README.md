@@ -24,6 +24,7 @@ This repository contains the files for this food forum web app called *Archer's 
 
 
 The following npm commands were used when developing the program
+```
 - npm init -y
 - npm i dotenv
 - npm i express
@@ -37,6 +38,7 @@ The following npm commands were used when developing the program
 - npm i passport passport-local (NOT INSTALLED)
 - npm i passport-local-mongoose (NOT INSTALLED)
 - npm i hbs (NOT INSTALLED)
+```
 
 *to use nodemon scripts run: PowerShell -ExecutionPolicy Bypass when starting a new terminal
 *clicking the user icon when already inside the user page will log you out and return the browser to the login page.
