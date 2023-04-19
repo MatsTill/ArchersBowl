@@ -1,26 +1,7 @@
-const restaurantTemplate = Handlebars.compile(document.getElementById("restaurant-template").innerHTML);
-const restaurantContainer = document.getElementById("restaurant-container");
-
-for (const restaurant of restaurants) {
-    const restaurantHtml = restaurantTemplate(restaurant);
-
-    // Create a new div element
-    const restaurantElement = document.createElement("div");
-    // Set the innerHTML of the div element to the generated HTML
-    restaurantElement.innerHTML = restaurantHtml;
-    // Append the new div element to the restaurant container
-    restaurantContainer.appendChild(restaurantElement);
-
-    // Add an event listener to the restaurant container
-    restaurantElement.addEventListener("click", function(event) {
-        // Prevent the default behavior of the anchor tag for child elements
-        if (event.target.tagName !== "A") {
-            window.location.href = "review.html"; // Navigate to review.html
-        }
-    });
-}
-
 //FILTER POPUP
+
+
+
 var coll = document.getElementsByClassName("filter");
 var i;
 
@@ -54,7 +35,7 @@ for (i = 0; i < coll.length; i++) {
 }
 
 //ADD NEW RESTO
-document.getElementById("publish-button").addEventListener("click", async function() {
+document.getElementById("publish-button").addEventListener("click", async function () {
     // Get the values from the input fields
     const newName = document.querySelector(".newname").value;
     const rating = document.querySelector('input[name="rate"]:checked').id.split("-")[1];
@@ -123,7 +104,6 @@ for (let i = 0; i < btnsTip.length; i++) {
 document.getElementById("search-button").addEventListener("click", function () {
     filterSelection('search');
 });
-
 
 
 //FILTERING
