@@ -18,7 +18,7 @@ This repository contains the files for this food forum web app called *Archer's 
 6. Go to the browser and enter `localhost:3000` in the URL to access the web application.
 
 
-**The application is currently deployed and can be found through this link: https://mco-phase-3-archersbowl.web.app/ or https://archers-bowl.herokuapp.com/**
+**The application is currently deployed and can be found through this link: http://its-seconds.at.ply.gg:5441/ or https://archers-bowl.herokuapp.com/**
 
 
 The following npm commands were used when developing the program
