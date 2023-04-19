@@ -9,6 +9,8 @@ const app = express(); // Create Express app
 const PORT = 3000; // Set port to listen on, fallback to 3000 if not specified
 import session from 'express-session'; // Middleware for managing sessions
 import MongoStore from 'connect-mongo'; // Store session data in MongoDB
+import path from 'path';
+
 
 // Set view engine and handlebars as the template engine
 app.set('view engine', 'hbs');
@@ -18,13 +20,13 @@ app.engine('hbs', exphbs.engine({extname: 'hbs'}));
 app.use(express.urlencoded({extended: true}));
 
 // Serve static files from public directory
-app.use(express.static('public'));
+app.use('/static', express.static(path.join(new URL('.', import.meta.url).pathname, 'public')));
 
 
 // Set up session middleware with MongoStore
 app.use(session({
     secret: 'archersbowlsecret', // Secret key used for session data encryption
-    store: MongoStore.create({mongoUrl: process.env.MONGODB_URI || 'mongodb://localhost:27017/ccapdev-mp'}), // Store session data in MongoDB, fallback to local MongoDB URI if not specified in environment variables
+    store: MongoStore.create({mongoUrl: process.env.MONGODB_URI || 'mongodb://localhost:27017/ArchersBowl'}), // Store session data in MongoDB, fallback to local MongoDB URI if not specified in environment variables
     resave: false, // Do not save session if it hasn't been modified
     saveUninitialized: true, // Save uninitialized session (e.g. new session without modifications)
     cookie: {secure: false, maxAge: 1000 * 60 * 60 * 24 * 7} // Cookie configuration (not secure for development, max age set to 21 days)
