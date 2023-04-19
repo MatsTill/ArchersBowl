@@ -1,4 +1,6 @@
-import { Schema, model, SchemaTypes} from "mongoose";
+import mongoose from "mongoose";
+
+const { Schema } = mongoose;
 
 const reviewSchema = new Schema({
   review_id: {
@@ -24,6 +26,11 @@ const reviewSchema = new Schema({
     min: 1,
     max: 5
   },
+  reviewImage: {
+    type: Schema.Types.ObjectId,
+    ref: 'GridFSBucket',
+    required: true,
+  },
   price: {
     type: Number,
     required: true
@@ -34,30 +41,6 @@ const reviewSchema = new Schema({
   },
   content: {
     type: String
-  },
-});
-
-const commentSchema = new Schema({
-  user_id: {
-    type: Schema.Types.ObjectId,
-    ref: 'User',
-    required: true 
-  },
-  comment_date: {
-    type: Date,
-    required: true,
-  },
-  content: {
-    type: String,
-    required: true
-  },
-});
-
-const likeSchema = new Schema({
-  user_id: {
-    type: Schema.Types.ObjectId,
-    ref: 'User',
-    required: true 
   },
 });
 
