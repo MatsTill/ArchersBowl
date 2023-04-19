@@ -3,17 +3,20 @@ import controller from '../controllers/controller.js';
 
 const router = express();
 
+router.get('/', controller.isPublic, controller.getSignIn);
 router.get('/homepage', controller.isPublic, controller.getHome);
 router.get('/signup', controller.isPublic, controller.getRegister);
 router.get('/signin',controller.isPublic, controller.getSignIn);
 
 router.get('/user', controller.isPublic, controller.getProfile);
-router.get('/restaurant', controller.isPublic, controller.getRestaurantPage);
+router.get('/restaurant/:id?', controller.isPublic, controller.getRestaurantPage);
+
 router.get('/review', controller.isPublic, controller.getReviewPage);
 
 router.get('/logout', controller.isPublic, controller.getLogout);
 
 router.post('/checkAccount', controller.postCheckAccount);
+//router.post('/addResto', controller.postAddResto);
 //router.post('/uploadPicture', controller.isPrivate, controller.postUploadPicture);
 router.post('/addAccount', controller.postAddAccount);
 
