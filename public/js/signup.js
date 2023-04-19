@@ -12,6 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const jsonFormObj = JSON.stringify(formObj);
 
+        const requiredFields = ["email", "givenName", "lastName", "password", "username", "role"];
+
+        for (const field of requiredFields) {
+            if (!formObj[field]) {
+                alert(`${field} field is required.`);
+                return;
+            }
+        }
+
         try {
             const response = await fetch("/addAccount", {
                 method: "POST",
