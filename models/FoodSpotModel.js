@@ -1,37 +1,51 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
-// Define schema for food spot
-const foodSpotSchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: true
-    },
-    stallImg: {
-        type: String
-    },
-    coverImg: {
-        type: String
-    },
-    menuImg: {
-        type: String
-    },
-    overallRating: {
-        type: Number
-    },
-    cuisine: {
-        type: String,
-        required: true
-    },
-    overallPrice: {
-        type: Number
-    },
-    overallWWaitTime: {
-        type: Number
-    }
+const { Schema } = mongoose;
+
+const restaurantSchema = new Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+  foodCoverPhoto: {
+    type: Schema.Types.ObjectId,
+    ref: 'GridFSBucket',
+    required: true,
+  },
+  waitTime: {
+    type: Number,
+    required: true,
+  },
+
+  avgRating: {
+    type: Number,
+    required: true,
+  },
+  avgPrice: {
+    type: String,
+    required: true,
+  },
+  cuisine: {
+    type: String,
+    required: true,
+  },
+  stallImage: {
+    type: Schema.Types.ObjectId,
+    ref: 'GridFSBucket',
+    required: true,
+  },
+  menu: {
+    type: Schema.Types.ObjectId,
+    ref: 'GridFSBucket',
+    required: true,
+  },
+  locationId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Location',
+    required: true
+}
 });
 
-// Create Mongoose model
-const FoodSpot = mongoose.model('FoodSpot', foodSpotSchema);
+const Restaurant = mongoose.model('Restaurant', restaurantSchema);
 
-// Export the model
-module.exports = FoodSpot;
+export default Restaurant;
