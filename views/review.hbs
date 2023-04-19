@@ -8,60 +8,139 @@
     <meta name="author" content="DLSU CCS">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviews - Archer's Bowl</title>
-    <link rel="stylesheet" type="text/css" media="all" href="css/review.css">
-    <link rel="stylesheet" href="https://use.typekit.net/sox5uuo.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="graphics/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="graphics/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="graphics/favicon-16x16.png">
-    <link rel="manifest" href="graphics/site.webmanifest">
-    <link rel="mask-icon" href="graphics/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#00a300">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" media="all" href="/static/css/review.css">
+
+  <link rel="stylesheet" href="https://use.typekit.net/sox5uuo.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/statici/mages/favicon-16x16.png">
+  <link rel="manifest" href="/static/images/site.webmanifest">
+  <link rel="mask-icon" href="/static/images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00a300">
+  <meta name="theme-color" content="#ffffff">
   </head>
 
   <body>
     <header>
       <div class="home-button">
-        <a href="homepage.html"><img src="graphics/home.png" class="thumbnail-icon"></a>
+        <a href="/homepage"><img src="/static/images/home.png" class="thumbnail-icon"></a>
       </div>
 
       <div class="user-icon">
-        <a href="user.html"><img class="thumbnail-icon" src="graphics/person.png"></a>
+        <a href="/user"><img class="thumbnail-icon" src="/static/images/person.png"></a>
       </div>
     </header>
 
     <div class="left">
-      <div class="details-container">
-        <span class="caption">
-          <p style="color: black">{{price}} ,&nbsp; {{cuisine}},&nbsp; {{location}}</p>
-          <p style="font-weight: bold; font-size: 30px;color: black;">{{name}}</p>
-          <p style="color:black">{{rating}}</p>
-        </span>
+        <div class="details-container">
+            <span class="caption">
+                <p style="color: black">₱₱,&nbsp;Filipino,&nbsp;Near Goks</p>
+                <p style="font-weight: bold; font-size: 30px;color: black;">Tapa King</p>
+                <p style="color:black">⭐4.6</p>
+            </span>
 
-        <span class="resto-img">
-          <p><a href="graphics/tpkmenu.jpg">VIEW MENU</a></p>
-          <p><a href="graphics/tpkstall.jpg">VIEW STALL</a></p>
-        </span>
-      </div>
+            <span class="resto-img">
+                <p><a href="/static/images/tpkmenu.jpg">VIEW MENU</a></p>
+                <p><a href="/static/images/tpkstall.jpg">VIEW STALL</a></p>
+            </span>
 
-      <div class="review-container">
-        {{#each reviews}}
-        <div class="review-card">
-          <div class="card-header">
-            <img src="graphics/person.png">
-            <h2>{{this.author}}</h2>
-            <p class="review-rating">{{this.rating}}</p>
-          </div>
-          <img class="review-img" src="{{this.image}}">
-          <p class="review-min">{{this.time}} mins</p>
-          <p class="review-price">{{this.price}}</p>
-          <p class="review-class-p">{{this.comment}}</p>
         </div>
-        {{/each}}
-      </div>
+
+        <div class="review-container">
+            <!--first review-->
+            <div class="review-card">
+                <div class="card-header">
+                    <img src="/static/images/person.png">
+                    <h2>Sam</h2>
+                    <p class="review-rating">⭐⭐⭐⭐⭐</p>
+                </div>
+                <img class="review-img" src="/static/images/tpk2.jpg">
+                <p class="review-min">6 mins</p>
+                <p class="review-price">₱150</p>
+                <p class="review-class-p">Tapa King never disappoints! The portions are generous and the flavors are spot-on. 
+                    My personal favorite is the beef tapa, but everything on the menu is worth trying. Highly recommend this restaurant!</p>
+            </div>
+            <!--second review-->
+            <div class="review-card">
+                <div class="card-header">
+                    <img src="/static/images/person.png">
+                    <h2>Ryan</h2>
+                    <p class="review-rating">⭐⭐⭐⭐</p>
+                </div>
+                <img class="review-img" src="/static/images/tpk1.jpg">
+                <p class="review-min">18 mins</p>
+                <p class="review-price">₱140</p>
+                <p class="review-class-p">Great value for money! The servings are huge and the food is tasty</p>
+            </div>
+            <!--third review-->
+            <div class="review-card">
+                <div class="card-header">
+                    <img src="/static/images/person.png">
+                    <h2>Deon</h2>
+                    <p class="review-rating">⭐⭐⭐⭐⭐</p>
+                </div>
+                <img class="review-img" src="/static/images/tpk2.jpg">
+                <p class="review-min">15 mins</p>
+                <p class="review-price">₱115</p>
+                <p class="review-class-p">I was blown away by the quality of the food at Tapa King. 
+                    The ingredients are fresh and the dishes are expertly prepared. The atmosphere is cozy and inviting, making it the perfect spot for a casual meal with friends or family.</p>
+            </div>
+            <!--fourth review-->
+            <div class="review-card">
+                <div class="card-header">
+                    <img src="/static/images/person.png">
+                    <h2>Sophia</h2>
+                    <p class="review-rating">⭐⭐⭐⭐</p>
+                </div>
+                <img class="review-img" src="/static/images/tpk3.jpg">
+                <p class="review-min">10 mins</p>
+                <p class="review-price">₱119</p>
+                <p class="review-class-p">Tapa King's tapsilog is a classic favorite. Never disappoints!</p>
+            </div>
+        </div>
     </div>
 
     <div class="right">
+        <div class="review">
+            <p class="title">WRITE A REVIEW</p>
+            <textarea class="text-review" cols="30" rows="10" maxlength="350"></textarea>
+
+            <div class="ratings">
+                <p class="subtitle">RATING</p>
+                <p class="subtitle" class="values">PRICE</p>
+                <p class="subtitle" class="values">WAIT TIME</p>
+
+                <div class="star-rating">
+                    <input type="radio" name="rate" id="rate-5">
+                    <label for="rate-5" class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-4">
+                    <label for="rate-4" class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-3">
+                    <label for="rate-3" class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-2">
+                    <label for="rate-2" class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-1">
+                    <label for="rate-1" class="fa fa-star"></label>
+                </div>
+                
+                <!--
+                <p>★★★★★</p>
+                <input type="TEXT" class="values" maxlength="1">
+                -->
+
+                <p style="padding-left: 15px; padding-right: -20px;">₱</p>
+                <input type="text" class="values" maxlength="5">
+                <input type="text" class="values" maxlength="2">
+                <p>mins.</p>
+
+            </div>
+            <input type="file" id="file-upload" />
+            <label for="file-upload">UPLOAD A PHOTO</label><BR>
+
+
+            <button class="publish-button" id="publish-button"> PUBLISH</button><br>
+        </div>
     </div>
-  </body>
+
+</body>
 </html>

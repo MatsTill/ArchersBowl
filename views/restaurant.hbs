@@ -2,40 +2,36 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="MCO1">
-    <meta name="keyword" content="HTML,CSS">
-    <meta name="author" content="DLSU CCS">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="all" href="css/restaurant.css">
+
     <link rel="stylesheet" href="https://use.typekit.net/sox5uuo.css">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
-    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/statici/mages/favicon-16x16.png">
+    <link rel="manifest" href="/static/images/site.webmanifest">
+    <link rel="mask-icon" href="/static/images/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#00a300">
     <meta name="theme-color" content="#ffffff">
-    <title>Archer's Bowl</title>
+
+    <title>{{pageTitle}} - Archer's Bowl</title>
+    <link rel="stylesheet" type="text/css" media="all" href="/static/css/restaurant.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-</head>
 </head>
 
 <header>
     <div class="home-button">
-        <a href="/homepage"><img src="images/home.png" class="thumbnail-icon"></a>
+        <a href="/homepage"><img src="/static/images/home.png" class="thumbnail-icon"></a>
     </div>
 
     <div class="user-icon">
-        <a href="/user"><img class="thumbnail-icon" src="images/person.png"></a>
+        <a href="/user"><img class="thumbnail-icon" src="/static/images/person.png"></a>
     </div>
 
     <h1 id="pageTitle">
-        <img src="images/pin.png" height="40px">
-        DLSU
+        <img src="/static/images/pin.png" height="40px">
+        {{pageTitle}}
     </h1>
 
 
@@ -127,36 +123,35 @@
 
 
     <br>
-    <div class="all-restaurants" id="restaurant-container"></div>
-    <script id="restaurant-template" type="text/x-handlebars-template">
+    <div class="all-restaurants" id="restaurant-container">
+        {{#each restaurants}}
         <a href="/review">
             <div class="restaurant-container">
                 <div class="wait-time-container">
                     <span class="wait_time_amount">{{waitTime}}</span>
                     <span class="minutes">MIN</span>
                 </div>
-    
+
                 <div class="image-container">
                     <picture>
-                        <img src="{{imageSource}}" id="resto">
+                        <img src="/static{{this.foodCoverPhoto}}" id="resto">
                     </picture>
                 </div>
-    
+
                 <div class="caption-container">
-                    <span class="name">{{name}}</span>
-                    <span class="rating">★ {{rating}}</span>
-    
+                    <span class="name">{{this.name}}</span>
+                    <span class="rating">★ {{this.avgRating}}</span>
+
                     <br>
-                    <span class="price">{{price}}</span>
-                    <span class="cuisine">{{cuisine}}</span>
+                    <span class="price">{{this.avgPrice}}, </span>
+                    <span class="cuisine">{{this.cuisine}}</span>
                 </div>
             </div>
         </a>
-    </script>
-<script src="libs/handlebars.min.js"></script>
+        {{/each}}
+    </div>
 
-    <script src="js/restos.js"></script>
-    <script src="js/restaurant.js"></script>
+    <script src="/static/js/restaurant.js"></script>
 
 
 </body>
