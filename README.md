@@ -43,5 +43,5 @@ clicking the user icon when already inside the user page will log you out and re
 project not yet finished </sub>
 
 ## Contributors
-[Sophia Elen Perez](https://github.com/MatsTill)
+[Sophia Elen Perez](https://github.com/MatsTill)<br>
 [Ryan Taino](https://github.com/Nikkkkkkko)
