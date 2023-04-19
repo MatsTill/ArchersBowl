@@ -3,7 +3,7 @@ dotenv.config();
 import mongoose from 'mongoose';
 
 
-const url = 'mongodb://localhost:27017/ccapdev-mp';
+const url = 'mongodb://localhost:27017/ArchersBowl';
 
 const options = {
     useUnifiedTopology: true,
