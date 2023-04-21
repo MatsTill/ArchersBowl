@@ -44,5 +44,5 @@ project not yet finished </sub>
 
 ## Contributors
 [Sophia Elen Perez](https://github.com/MatsTill)<br>
-[Ryan Nicholas Taino](https://github.com/Nikkkkkkko)
+[Ryan Nicholas Taino](https://github.com/Nikkkkkkko)<br>
 [Samantha Aniversario](https://github.com/sammysga)
